@@ -12,7 +12,6 @@
 # serve to show the default.
 
 import sys, os
-print("HELLO?")
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -93,7 +92,9 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 sys.path.append(os.path.abspath('_themes'))
-html_theme_path = ['./_themes', 'docs/_themes']
+sys.path.append(os.path.abspath('.'))
+sys.path.append(os.path.abspath('new_themes'))
+html_theme_path = ['_themes', 'docs/_themes', '.']
 html_theme = 'vlinux-theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
