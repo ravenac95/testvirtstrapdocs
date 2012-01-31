@@ -93,8 +93,7 @@ pygments_style = 'sphinx'
 # a list of builtin themes.
 sys.path.append(os.path.abspath('_themes'))
 sys.path.append(os.path.abspath('.'))
-sys.path.append(os.path.abspath('new_themes'))
-html_theme_path = ['_themes', 'docs/_themes', '.']
+html_theme_path = ['_themes', 'docs/_themes']
 html_theme = 'flask'
 
 # Theme options are theme-specific and customize the look and feel of a theme
