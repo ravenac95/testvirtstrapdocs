@@ -248,6 +248,7 @@ texinfo_documents = [
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
 
+sys.path.append(os.path.abspath('docs/_themes'))
 sys.path.append(os.path.abspath('_themes'))
-html_theme_path = ['_themes']
+html_theme_path = ['_themes', 'docs/_themes']
 html_theme = 'flask'
